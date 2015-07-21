@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="styling.css" type="text/css" media="all" />
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+    <div class="navbar-header">
+
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav" id="menu">
+            <li class="hidden-xs">
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#restaurants">Restaurant Chain</a>
+            </li>
+
+            <li>
+                <a href="#login">Login/Sign up</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<section class="bg_container">
+    <div class="images_container">
+        <img class="i1" src="img3.jpg"/>
+
+
+    </div>
+</section>
+
+<section id="restaurants">
+    <div id="logged_in" class=" ">
+        <div class=" ">
+            <table class="search_form">
+                <tbody>
+                <tr>
+                    <td>
+                        <form id="search_form" action="" method="POST">
+                            <input type="hidden" name="Submit" value="1" />
+                            <h2>Reserve table of your Favorite Restaurant</h2>
+                            <div class="search_container">
+                                <table>
+                                    <tr>
+                                        <td class="address_container">
+                                            <div class="address_field">
+                                                <input type="text" name="members" id="members" placeholder="Enter number of members" />
+                                                <input type="text" name="date" id="date" placeholder="Enter date:DD/MM/YY" />
+                                            </div>
+                                            <div class="warning_search_box"></div>
+                                        </td>
+                                        <td class="search_type_container">
+                                            <div class="search_type_field">
+                                                <select id="dtype" >
+                                                    <option >Create a Reservation</option>
+                                                    <option >Cancel a Reservation</option>
+                                                    <option >View/Modify a Reservation</option>
+                                                </select>
+                                                <div class="select_arrow"></div>
+
+                                            </div>
+                                        </td>
+                                        <td class="submit_button_container">
+                                            <button >Find table</button>
+                                            <div class="submit_footer">Enjoy Free Reservation!</div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="back_to_last_rest">
+                        <div>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <!-- end #Search_box -->
+        </div>
+    </div>
+</section>
+
+<div id="iterable_form" class="iterable_container">
+    <h3>Want to know about special offers? Get our weekly email:</h3>
+    <form name="iterable_optin" method="POST">
+        <div class="input_container">
+            <input id="iterable_email" class="input_email" type="text" name="email" size="22" placeholder="Email" >
+            <div class="input_email input_done hidden">Thanks, see you in your inbox soon.</div>
+        </div>
+        <input class="button" name="go" type="submit" value="Sign Up" >
+    </form>
+    <div class="email_error hidden"><span>*Please enter a valid email.</span></div>
+</div>
+
+</body>
